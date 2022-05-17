@@ -1,0 +1,18 @@
+﻿
+    #p1
+        {
+            background-color:aqua;
+            font-size:40px;
+        }
+        div{
+            background-color:aquamarine;
+            font-size:30px;
+            color:azure;
+        }
+        #p2
+        {
+            background-color:brown;
+        }
+        .center-aligment{
+            text-align:center;
+        }
