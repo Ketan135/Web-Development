@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        Enter Number:<input type="text" id="t1" />
+    </p>
+    <p>
+        <input type="button" value="Add at last" onclick="addlast()" />
+        <input type="button" value="Add at First" onclick="addfirst()" />
+        <input type="button" value="Remove last element" onclick="removelast()" />
+        <input type="button" value="Remove first element" onclick="removefirst()" />
+    </p>
+    <div id="d1"></div>
+    <script>
+        var numbers = [56, 23, 78, 18,99];
+        //numbers.push("20");
+        //numbers.unshift("18");
+        //numbers.pop();
+        //numbers.shift();
+
+        numbers.splice(3, 0, "11", "12");
+        //const numbersCopy = numbers.splice(1, 3);
+        numbers.sort();
+        numbers.reverse();
+
+        var data = "<ul>";
+        for (let i = 0; i < numbers.length; i++) {
+            data += "<li>" + numbers[i] + "</li>";
+        }
+        data += "</ul>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;
+
+        function addlast() {
+            data = " ";
+            var t = document.getElementById("t1").value;
+            numbers.push(t);
+
+            var data = "<ul>";
+            for (let i = 0; i < numbers.length; i++) {
+                data += "<li>" + numbers[i] + "</li>";
+            }
+
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+
+
+        }
+        function addfirst() {
+            data = " ";
+            var t = document.getElementById("t1").value;
+            numbers.unshift(t);
+
+            var data = "<ul>";
+
+            for (let i = 0; i < numbers.length; i++) {
+                data += "<li>" + numbers[i] + "</li>";
+            }
+
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+
+        }
+        function removelast() {
+            data = " ";
+            var t = document.getElementById("t1").value;
+            numbers.pop();
+
+            var data = "<ul>";
+
+            for (let i = 0; i < numbers.length; i++) {
+                data += "<li>" + numbers[i] + "</li>";
+            }
+
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+
+
+        }
+        function removefirst() {
+            data = " ";
+            numbers.shift();
+
+            var data = "<ul>";
+
+            for (let i = 0; i < numbers.length; i++) {
+                data += "<li>" + numbers[i] + "</li>";
+            }
+
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+
+
+
+        }
+    </script>
+    <!--<script>
+        var number = [14000, 104, 99];
+        //number.sort(function (a, b) { return b - a });
+        number.sort(function (a, b) { return a - b });
+        document.getElementById("d1").innerHTML = number;
+    </script>-->
+</body>
+</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        Enter Color:<input type="text"id="t1"/>
+    </p>
+    <p>
+        <input type="button" value="Add at last" onclick="addlast()" />
+        <input type="button" value="Add at First" onclick="addfirst()" />
+        <input type="button" value="Remove last element" onclick="removelast()" />
+        <input type="button" value="Remove first element" onclick="removefirst()" />
+    </p>
+    <div id="d1"></div>
+    <script>
+        var colors = ["red", "blue", "green", "black"];
+        //colors.push("white");
+        //colors.unshift("blue");
+        //colors.pop();
+        colors.shift();
+
+        colors.splice(3, 0, "white", "pink");
+        //const colorCopy = colors.splice(1, 3);
+        colors.sort();
+        colors.reverse();
+
+        var data = "<ul>";
+        for (let i = 0; i < colors.length; i++) {
+            data += "<li>" + colors[i] + "</li>";
+        }
+        data += "</ul>";
+        console.log(data);
+        document.getElementById("d1").innerHTML = data;
+
+        function addlast() {
+            data = " ";
+            var t = document.getElementById("t1").value;
+            colors.push(t);
+
+            var data = "<ul>";
+            for (let i = 0; i < colors.length; i++) {
+                data += "<li>" + colors[i] + "</li>";
+            }
+
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+
+
+        }
+        function addfirst() {
+            data = " ";
+            var t = document.getElementById("t1").value;
+            colors.unshift(t);
+
+            var data = "<ul>";
+
+            for (let i = 0; i < colors.length; i++) {
+                data += "<li>" + colors[i] + "</li>";
+            }
+
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+
+        }
+        function removelast() {
+            data = " ";
+            var t = document.getElementById("t1").value;
+            colors.pop();
+
+            var data = "<ul>";
+
+            for (let i = 0; i < colors.length; i++) {
+                data += "<li>" + colors[i] + "</li>";
+            }
+
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+
+
+        }
+        function removefirst() {
+            data = " ";
+            colors.shift();
+
+            var data = "<ul>";
+
+            for (let i = 0; i < colors.length; i++) {
+                data += "<li>" + colors[i] + "</li>";
+            }
+
+            data += "</ul>";
+            console.log(data);
+            document.getElementById("d1").innerHTML = data;
+
+        }
+    </script>
+</body>
+</html>
