@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        Enter number:<input type="text" id="n1" />
+    </p>
+    <p>
+        Enter number:<input type="text" id="n2" />
+    </p>
+    <p>
+        Result:<input type="text" id="n3" />
+    </p>
+    <p>
+        <input type="button" value="Addition" onclick="addition()" />
+        <input type="button" value="Substract" onclick="substract()" />
+        <input type="button" value="Multiplication" onclick="multiplication()" />
+        <input type="button" value="Division" onclick="division()" />
+    </p>
+    <script>
+        function addition() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = parseInt(a) + parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function substract() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = parseInt(a) - parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function multiplication() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = parseInt(a) * parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+        function division() {
+            var a = document.getElementById("n1").value;
+            var b = document.getElementById("n2").value;
+            var c = parseInt(a) / parseInt(b);
+            document.getElementById("n3").value = c;
+        }
+    
+   
+            function add() {
+            var a = 10, b = 20;
+            var c = a + b;
+            console.log("addition is:" + c)
+        }
+
+            function sub1(a, b) {
+                var sub;
+                sub = a - b;
+                return sub;
+
+            }
+        sub1 = (20 - 10);
+
+            function display(id, name, sal) {
+                console.log(id + " " + name + " " + sal)
+            }
+        display(101, "ketan", 30000);
+    </script>
+
+</body>
+</html>

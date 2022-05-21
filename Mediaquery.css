@@ -1,0 +1,30 @@
+﻿h1{
+    color:red;
+    font-size:40px;
+    text-decoration:underline;
+}
+ul{
+    list-style-type:none;
+    display:inline-flex;
+}
+ul-li{
+
+    margin-right:20px;
+}
+@media only screen and (min-device-width:768px) and (max-device-width:1024px)
+{
+    h1{
+        color:aqua;
+        font-size:25px;
+    }
+}
+@media only screen and (min-device-with:320px) and (max-device-width:480px)
+{
+    h1{
+        color:blue;
+        font-size:14px;
+    }
+    ul{
+        display:block;
+    }
+}

@@ -2,20 +2,37 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
+    <style>
+        #list1 {
+            background-color: gray;
+            font-style:italic;
+           
+        }
+        </style>
+        <meta charset="utf-8" / >
+        <title > </title >
+        </head >
 <body>
-    <a href="index.html">
-        Index
-    </a>
+     
+     <a href="index.html" >
+    Index
+    </a >
     <center>
-        <mark>Registration Page</mark>
-        <address>Pune</address>
+        <ul id="list1">
+
+            
+            "<h1>Registration</h1>
+        </ul>
+        <ul id="list1">
+            <address>Registration</address>
+            <h2>Pune</h2>
+        </ul>
         <form action="index.html">
-            <p>
-                Enter Name:<input type="text" id="name" required />
-            </p>
+            <div class="form-group">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" placeholder="Enter Name"required />
+            </div>
+           
             <p>
                 Enter Password:<input type="password" id="pwd" required />
             </p>
@@ -23,50 +40,49 @@
                 Enter Age:<input type="number" id="age" min="18 max=" 60"" />
             </p>
             <p>
-                select Gender:<input type="radio" id="r1" name="gender" />Male
-                <input type="radio" id="r2" name="gender" />Female
+                select Gender:<input type="radio" id="r1" name="gender" /> Male
+                <input type="radio" id="r2" name="gender" /> Female
             </p>
-            <p>
-                select Exp:<input type="radio" id="r3" name="exp" />Fresher
-                <input type="radio" id="r4" name="exp" />Female
-            </p>
-            <p>
-                select Hobbies:<input type="checkbox" id="c1" name="hobbies" />Music
-                select Hobbies:<input type="checkbox" id="c2" name="hobbies" />Sports
-                select Hobbies:<input type="checkbox" id="c1" name="hobbies" />Travelling
+            <p >
+            select Exp:<input type="radio" id="r3" name="exp" / > Fresher
+            <input type="radio" id="r4" name="exp" / > Female
+            </p >
+            <p >
+            select Hobbies:<input type="checkbox" id="c1" name="hobbies" / > Music
+            select Hobbies:<input type="checkbox" id="c2" name="hobbies" / > Sports
+            select Hobbies:<input type="checkbox" id="c1" name="hobbies" / > Travelling
 
-            </p>
-            <p>
-                Select City:
-                <select>
-                    <option>...Select City...</option>
-                    <option>Mumbai</option>
-                    <option>Pune</option>
-                    <option>Solapur</option>
-                </select>
-            </p>
+            </p >
+            <p >
+            Select City:
+            <select >
+            <option > ...Select City...</option >
+            <option > Mumbai</option >
+            <option > Pune</option >
+            <option > Solapur</option >
+            </select >
+            </p >
             <p>
                 Enter DOB:-<input type="datetime-local" />
             </p>
             <p>
                 Enter Email Id:-<input type="email" />
             </p>
+            <p >
+            <input type="month" / >
+            </p >
             <p>
-                <input type="month" />
-            </p>
-
-            <p>
-                <input type="time" />
+                Timing:<input type="time" />
             </p>
             <p>
                 Enter URL:-<input type="url" />
             </p>
+             <p >
+            <input type="color" / >
+            </p >
             <p>
-                <input type="color" />
-            </p>
-            <p>
-                <input type="button" value="Submit Button" />
-                <input type="button" value="Reset Button" />
+                <input type="button" value="Submit" />
+                <input type="button" value="Reset" />
             </p>
 
 
@@ -74,4 +90,4 @@
 
     </center>
 </body>
-</html>
+        </html >

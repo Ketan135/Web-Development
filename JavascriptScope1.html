@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        var x = 10;
+        const pi = 3.14;
+        const max = 30;
+        let num = 11;
+        function test1() {
+            var x = 20;
+            const pi = 3.15;
+            console.log("Inside the test1 function" + max);
+        }
+        function test2() {
+            let z = 20;
+            const max = 40;
+            console.log("Inside the test2 function" + pi);
+        }
+        console.log("Outside function" + x);
+        {
+
+            let y = 15;
+            const max = 25;
+            console.log("Inside a block" + max);
+        }
+        test1();
+        test2();
+    </script>
+
+</body>
+</html>
