@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        var emp={ };
+        emp.Id = 1;
+        emp.name="Ketan";
+        emp.city="Pune";
+
+        const employee = {
+            name: "Ketan",
+            sname: "Haridas",
+            fullName: function () {
+                return this.name + this.sname;
+            }
+           
+        }
+        const product = {
+            id:1,
+            name:"mouse",
+            price: 500,
+        discountAmount: function () {
+            return this.price * 0.10;
+            },
+            display: function () {
+                return this.id + "" + this.name + " " + this.price;
+            }
+        }
+        document.getElementById("d1").innerHTML = product.price + "have discount of" + product.discountAmount();
+        //document.getElementById("d1").innerHTML = product.display();
+        console.log(employee)
+        //console.log(employee.name + employee["sname"]);
+        //console.log(product["name"] + product.price);
+        //console.log(emp.Name);
+        //document.getElementById("d1").innerHTML = JSON.stringify(product);-->
+    </script>
+</body>
+</html>

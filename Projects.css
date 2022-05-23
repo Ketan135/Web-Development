@@ -1,3 +1,46 @@
-﻿body
-{
+﻿
+.carousel-item {
+    position:center;
+    display:contents;
+    float: left;
+    width: 100%;
+    height: 200px;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility:visible;
+    transition: transform .6s ease-in-out;
 }
+p {
+    clear:both;
+}
+
+
+.left-panel {
+    float: left;
+    color: blue;
+    height: 500px;
+    width: 50px;
+    background-color:lightgray;
+    height: 400px;
+    width: 200px;
+}
+
+    .left-panel ul {
+        list-style-type: none;
+    }
+
+        .left-panel ul li {
+            padding: 20px;
+        }
+.menu-side-image {
+    
+    float:left;
+    width: 150px;
+    padding:initial;
+}
+
+    .menu-side-image img {
+      
+        height: 150px;
+        width: 19rem;
+    }
